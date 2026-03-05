@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Registration</title>
+
+    <!-- INTERNAL CSS (Chrome safe) -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #e5533d;
+        }
+
+        .description {
+            margin-bottom: 20px;
+        }
+
+        /* Common box style */
+        .event-box, .form-card, .table-box {
+            background-color: white;
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+            text-align: left;
+        }
+
+        /* Form */
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        input:focus, textarea:focus {
+            border: 2px solid blue;
+            outline: none;
+        }
+
+        .btn-group {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #1976d2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        button:hover {
+            background-color: #0d47a1;
+        }
+
+        .reset {
+            background-color: #d32f2f;
+        }
+
+        .reset:hover {
+            background-color: #9a0007;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th {
+            background-color: #1976d2;
+            color: white;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #eeeeee;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1976d2;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Title -->
+    <h1>Tech Innovators Workshop</h1>
+    <p class="description">
+        Join us for an exciting workshop on the latest technology innovations and trends.
+    </p>
+
+    <!-- Event Details -->
+    <div class="event-box">
+        <h2>Event Details</h2>
+        <p><b>Date:</b> March 15, 2026</p>
+        <p><b>Time:</b> 10:00 AM – 4:00 PM</p>
+        <p><b>Venue:</b> Chennai</p>
+    </div>
+
+    <!-- Registration Form -->
+    <div class="form-card">
+        <fieldset>
+            <legend><b>Registration Form</b></legend>
+
+            <label>Name:</label>
+            <input type="text" value="Sangeetha">
+
+            <label>Email:</label>
+            <input type="email" value="sangeke27@gmail.com">
+
+            <label>Gender:</label>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender" checked> Female
+
+            <label>Skills:</label>
+            <input type="checkbox" checked> HTML
+            <input type="checkbox" checked> CSS
+            <input type="checkbox"> JavaScript
+
+            <label>Upload Resume:</label>
+            <input type="file">
+
+            <label>Experience / Comments:</label>
+            <textarea rows="3">Student with basic knowledge of HTML and CSS.</textarea>
+
+            <div class="btn-group">
+                <button type="submit">Submit</button>
+                <button type="reset" class="reset">Reset</button>
+            </div>
+        </fieldset>
+    </div>
+
+    <!-- Participants List -->
+    <div class="table-box">
+        <h2>Participants List</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Skills</th>
+            </tr>
+            <tr>
+                <td>Sangeetha</td>
+                <td>sangeeke27@gmail.com</td>
+                <td>Female</td>
+                <td>HTML, CSS</td>
+            </tr>
+            
+               
+ </table>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        Contact: info@techworkshop.com | Phone: 9876543210
+    </footer>
+
+</body>
+</html>
